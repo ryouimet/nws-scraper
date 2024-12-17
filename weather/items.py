@@ -7,6 +7,7 @@ import scrapy
 
 
 class WeatherItem(scrapy.Item):
+    _id = scrapy.Field()
     period = scrapy.Field()
     temperature = scrapy.Field()
     condition = scrapy.Field()
